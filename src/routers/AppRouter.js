@@ -5,6 +5,7 @@ import Index from "../components/Index";
 import Header from "../components/Header";
 import NotFound from "../components/NotFound";
 import About from "../components/About";
+import Contact from "../components/Contact";
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const AppRouter = () => (
             <Route path="/" component={Index} exact={true} />
             <Route path="/certificates" component={Certificates} />
             <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact}/>
             <Route component={NotFound} />
             </Switch>
         </div>
